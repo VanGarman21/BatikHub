@@ -8,17 +8,17 @@
 
     <ImageView
         android:id="@+id/img_preview_photo"
-        android:layout_width="match_parent"
-        android:layout_height="525dp"
-        android:src="@drawable/baseline_image_24"
+        android:layout_width="361dp"
+        android:layout_height="457dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
-        app:layout_goneMarginStart="7dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/masukan_gambar"
+        android:src="@drawable/baseline_image_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/masukan_gambar" />
+        app:layout_goneMarginStart="7dp" />
 
     <Button
         android:id="@+id/button_camera"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="@+id/button_camera" />
 
     <Button
-        android:id="@+id/button_upload"
+        android:id="@+id/buttonPindai"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

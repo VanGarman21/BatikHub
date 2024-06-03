@@ -14,14 +14,16 @@
     <string name="gambar_batik">Gambar Batik</string>
     <string name="motif_batik">Motif Batik</string>
     <string name="asal_daerah">Asal Daerah</string>
-    <string name="judul">Judul</string>
-    <string name="deskripsi">Deskripsi</string>
+    <string name="judul">Pelajari berbagai macam batik yang ada di Indonesia!</string>
+    <string name="deskripsi">Temukan fakta menarik dan sejarah di balik setiap motif batik. Tingkatkan pengetahuan kamu setiap harinya dengan konten eksklusif yang telah kami siapkan!</string>
     <string name="selanjutnya">Selanjutnya</string>
     <string name="your_image_desc">Deskripsi Gambar</string>
-    <string name="judul_halaman_2">Judul Halaman 2</string>
-    <string name="deskripsi_halaman_2">Deskripsi Halaman 2</string>
+    <string name="judul_halaman_2">Cari tahu nama motif batik yang kamu miliki!</string>
+    <string name="deskripsi_halaman_2">Temukan keindahan serta makna di balik setiap motif batik yang kamu miliki. Lestarikan warisan budaya kita dengan mengenal lebih dekat batik Indonesia!</string>
     <string name="sebelumnya">Sebelumnya</string>
-    <string name="judul_halaman_3">Judul Halaman 3</string>
-    <string name="deskripsi_halaman_3">Deskripsi Halaman 3</string>
+    <string name="judul_halaman_3">Hac ut aliquam orci nunc sed erat nulla</string>
+    <string name="deskripsi_halaman_3">Ipsum a urna ultrices sapien commodo. Phasellus condimentum viverra vehicula faucibus fringilla aliquam elementum quam. Libero nunc quis mi amet arcu egestas nulla dictumst.</string>
     <string name="selesai">Selesai</string>
+    <string name="scanned_batik_image">scanned_batik_image</string>
+    <string name="prediction_result">Batik Bali</string>
 </resources>
