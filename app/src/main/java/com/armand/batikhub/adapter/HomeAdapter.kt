@@ -13,7 +13,6 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageViewBatik)
         val textViewMotifBatik: TextView = itemView.findViewById(R.id.textViewMotifBatik)
-        val textViewAsalDaerah: TextView = itemView.findViewById(R.id.textViewAsalDaerah)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

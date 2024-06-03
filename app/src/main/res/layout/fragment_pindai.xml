@@ -56,7 +56,6 @@
         android:text="@string/scan"
         android:textAllCaps="false"
         android:backgroundTint="@color/teal_200"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button_gallery"
         app:layout_constraintHorizontal_bias="0.0"
