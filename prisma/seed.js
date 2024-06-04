@@ -1,9 +1,9 @@
-const batik = require('./batik');
+const batiks = require('./batiks');
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 async function main() {
-    for (let batik of batik) {
+    for (let batik of batiks) {
         await prisma.batik.create({
             data: batik
         })
