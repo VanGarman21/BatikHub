@@ -8,9 +8,18 @@ datasource db {
 }
 
 model Batik {
-  id_batik        String @id @unique @default(uuid())
-  nama_batik      String
-  asal_daerah     String
-  deskripsi_batik String
-  gambar_batik    String
+  id              String   @id @unique @default(uuid())
+  name            String
+  regional_origin String
+  description     String
+  image           String
+  createdAt       DateTime @default(now())
+}
+
+model User {
+  id        String   @id @unique @default(uuid())
+  name      String
+  email     String
+  password  String
+  createdAt DateTime @default(now())
 }
