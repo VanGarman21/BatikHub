@@ -5,7 +5,7 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 dotenv.config();
 
-// All path will automically start with /batik (because 'use' from index.js)
+// All path will automically start with /batik (because 'app.use()' from index.js)
 
 // Get all batik from database
 route.get('/', async (req, res) => {
@@ -18,33 +18,57 @@ route.get('/', async (req, res) => {
         console.log('Mendapat semua batik');
 
     } catch(error) {
+        console.log(error);
         res.status(500).json({ message: 'Internal server error!' });
     }
 });
 
 // Get specified batik info from id
-route.get('/id/:id_batik', async (req, res) => {
-    const batikId = req.params.id_batik;
-
+route.get('/id/:id', async (req, res) => {
+    const batikId = req.params.id;
     try {
         const selectedBatik = await prisma.batik.findUnique({
             where: {
-                id_batik: batikId
+                id: batikId
             }
         });
 
         if (selectedBatik) {
-            res.json({
+            return res.json({
                 message: 'Get selected batik success!',
                 data: selectedBatik
             });
-            console.log(`Batik yang dipilih: ${selectedBatik.nama_batik}`);
+            console.log(`Batik yang dipilih: ${selectedBatik.name}`);
         } else {
             res.status(404).json({ message: 'Batik not found!' });
         }
     } catch(error) {
+        console.log(error);
         res.status(500).json({ message: 'Internal server error!' });
     }
 });
+
+// Get specified batik info from name
+route.post('/name', async (req, res) => {
+    const { name } = req.body;
+
+    try {
+        const selectedBatik = await prisma.batik.findFirst({
+            where: { name }
+        });
+
+        if(selectedBatik) {
+            res.json({
+                message: 'Get batik from name success!',
+                data: selectedBatik
+            });
+        } else {
+            res.status(404).json({ message: 'Batik not found! (Write correct and full batik name, ex: Batik Bali)' });
+        }
+    } catch(error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error!' });
+    }
+})
 
 module.exports = route;
