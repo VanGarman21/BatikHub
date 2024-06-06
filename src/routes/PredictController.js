@@ -1,11 +1,12 @@
 const route = require('express').Router();
 const dotenv = require('dotenv');
 const { PrismaClient } = require('@prisma/client');
+const accessValidation = require('../middleware/accessValidation');
 
 const prisma = new PrismaClient();
 dotenv.config();
 
-// All path will automically start with /predict (because 'use' from index.js)
+// All path will automically start with /predict (because 'app.use()' from index.js)
 
 // Predict the item inputed
 route.post('/', (req, res) => {
@@ -17,7 +18,7 @@ route.post('/', (req, res) => {
 });
 
 // Get histories of predictions
-route.get('/histories', (req, res) => {
+route.get('/', accessValidation, (req, res) => {
     try {
         res.send('ini endpoint untuk riwayat prediksi');
     } catch(error) {
@@ -28,18 +29,20 @@ route.get('/histories', (req, res) => {
 // Multiple route for Get or Delete predict histories from id
 
     // --- Get
-route.route('/id/:id_predict').get((req, res) => {
+route.route('/id/:id').get((req, res) => {
+    const predictId = req.params.id;
     try {
+
         res.send('Ini endpoint untuk mendapatkan prediksi sesuai id');
     } catch(error) {
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
     // ---Delete
 }).delete((req, res) => {
     try {
         res.send('Ini endpoint untuk hapus riwayat prediksi');
     } catch(error) {
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 });
 
