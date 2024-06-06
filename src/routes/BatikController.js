@@ -10,16 +10,15 @@ dotenv.config();
 // Get all batik from database
 route.get('/', async (req, res) => {
     try {
-        const allBatik = await prisma.batik.findMany();
-        res.json({ 
+        const batiks = await prisma.batik.findMany();
+        return res.status(200).json({ 
             message: 'Get all batik success!', 
-            data: allBatik 
+            data: batiks
         });
-        console.log('Mendapat semua batik');
 
     } catch(error) {
         console.log(error);
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 });
 
@@ -34,17 +33,16 @@ route.get('/id/:id', async (req, res) => {
         });
 
         if (selectedBatik) {
-            return res.json({
+            return res.status(200).json({
                 message: 'Get selected batik success!',
                 data: selectedBatik
             });
-            console.log(`Batik yang dipilih: ${selectedBatik.name}`);
         } else {
-            res.status(404).json({ message: 'Batik not found!' });
+            return res.status(404).json({ message: 'Batik not found!' });
         }
     } catch(error) {
         console.log(error);
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 });
 
@@ -58,16 +56,16 @@ route.post('/name', async (req, res) => {
         });
 
         if(selectedBatik) {
-            res.json({
+            return res.status(200).json({
                 message: 'Get batik from name success!',
                 data: selectedBatik
             });
         } else {
-            res.status(404).json({ message: 'Batik not found! (Write correct and full batik name, ex: Batik Bali)' });
+            return res.status(404).json({ message: 'Batik not found! (Write correct and full batik name, ex: Batik Bali)' });
         }
     } catch(error) {
         console.log(error);
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 })
 
