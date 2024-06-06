@@ -3,8 +3,8 @@ const batikRoute = require('./BatikController');
 const predictRoute = require('./PredictController');
 const authRoute = require('./AuthController');
 
+route.use('/auth', authRoute);
 route.use('/batik', batikRoute);
 route.use('/predict', predictRoute);
-route.use('/auth', authRoute);
 
 module.exports = route;

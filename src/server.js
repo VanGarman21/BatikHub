@@ -6,6 +6,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 const ports = process.env.PORT;
 
+// Catch body from request
+app.use(express.json());
+
 app.use('/', route);
 
 app.get('/', (req, res) => {
