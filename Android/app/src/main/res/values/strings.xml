@@ -25,4 +25,15 @@
     <string name="selesai">Selesai</string>
     <string name="scanned_batik_image">scanned_batik_image</string>
     <string name="prediction_result">Batik Bali</string>
+    <string name="button_text_daftar">Daftar</string>
+    <string name="const_text_auth_question_register">Kamu sudah punya akun?</string>
+    <string name="const_text_login">Masuk</string>
+    <string name="const_text_name">Nama</string>
+
+    <string name="UI_validation_invalid_email">Email format is invalid</string>
+    <string name="UI_validation_empty_email_password_name">Field Name, Email and Password must be filled</string>
+    <string name="UI_validation_password_rules">Password must contain at least 8 characters</string>
+    <string name="UI_info_successful_register_user">New user registration is successful, please login using the registered email and password</string>
+    <string name="const_text_email">Email</string>
+    <string name="const_text_password">Password</string>
 </resources>

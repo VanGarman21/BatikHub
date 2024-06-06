@@ -1,0 +1,419 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:41:9-49:20
+	android:grantUriPermissions
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:45:13-47
+	android:authorities
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:43:13-60
+	android:exported
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:42:13-62
+manifest
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:2:1-57:12
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/tiostwn/.gradle/caches/transforms-3/d64262d30dfd028fefb0db007e75e64f/transformed/viewbinding-8.2.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f200908b815b7ed9fd4773d7155955ab/transformed/navigation-common-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ceb3b630dc82b5cf6d5c1e6750dc4d22/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/bc042b67814d629ab2ad2984d317c558/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ac087ee931866e15ba425f3dafa011e0/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/48f306ee417ccb05ab4ef5328919c987/transformed/navigation-fragment-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/d7a1428b8b6736920e96814a807292a4/transformed/navigation-fragment-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/9fb483460b0e3731ca163b8729637a3f/transformed/navigation-ui-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/c71e3a63223d2f49a6b57933e2c7168b/transformed/navigation-ui-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.12.0] /Users/tiostwn/.gradle/caches/transforms-3/337e34332cf4bec5cb62ffb73e0c3b27/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tiostwn/.gradle/caches/transforms-3/a1c5e08825da8b3508fd7a457a086ebc/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/f880cc1c3e36c0c4b347845a9fccfd59/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/60b492a510ec931c8abbf232e0a5612c/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/e3779211110e7e7363a092096e8e5517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/43e07bfc22f434b6829fa482b36478eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f3f7438be94c5a2586129be9542e1aee/transformed/fragment-ktx-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f5f8bdc054be29dabad018543dfd8a80/transformed/fragment-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/c14829fa2f129e4c89cf5945064fe2f3/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/5546cce9dcb60f35250f341d0240034f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /Users/tiostwn/.gradle/caches/transforms-3/c04cd7c4dbca882bd47bb8ef3eae1c09/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/fac8873912f329e8ec858b1542e5eaef/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/b32a1958faa0268f872a3ca4a69a0815/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/269866e44f1679704c05a22004bd96f5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/e4bd6bc793385d35014d09a0daf08d7f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06715fd874cd9812eceab5de0c10c233/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/5b5993d18bcbb605c3c00d6e0023f074/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/500766e79ad040e96a8c6ec6afac8a4b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/c84f9dfec168e48f8d66cb61fe8b5935/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/13c7aa4412f57883c435d4ffea80fc4f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/dd5bf7646a22a18020a2053e33d32a88/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d7343b270bab0cb8a9fc584b9c2dbb07/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/aa17826a1efedf74a38a1302d265141d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/803160c04cb3779c01c93e52e12738b1/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/5cc4fd7bc44674266a738e5ebb966f5c/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/eaf4098f7f2e5a321bd276b2ce870aa2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d8c23ae62514d126668047c47706591f/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/29c6ab28febf7d4aa40d35945fb8a2e1/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/a0deec19768cbe850a85da7400e9eea2/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/06c7ac21f2ec2667826c3884ae78d031/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/b76e5a7dfe7756ead419f7ef145b568e/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/tiostwn/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/85968db88edcf3bb1a8ca9d1d120de35/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/425c79b41c5100e4c9e6d62d316150ce/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06c0de05be1d7b07fa7c8604eba58308/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/e44061604b05eec77adf483bffd85fb0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/d83189a816d932a46931c06bc672e412/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/tiostwn/.gradle/caches/transforms-3/ee63aad40962667e9ebfadbe25b1116c/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/9df73e7003301e6fd55fe85a9a84be59/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/7b115708b95e2006844688cb5d0e7417/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/3d2071ecff002f078b1511d7965c37b5/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:6:5-8:36
+	android:required
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:8:9-33
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:7:9-47
+uses-permission#android.permission.CAMERA
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:9:5-64
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:14:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:15:22-76
+application
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:17:5-55:19
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:17:5-55:19
+MERGED from [com.google.android.material:material:1.12.0] /Users/tiostwn/.gradle/caches/transforms-3/337e34332cf4bec5cb62ffb73e0c3b27/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/tiostwn/.gradle/caches/transforms-3/337e34332cf4bec5cb62ffb73e0c3b27/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tiostwn/.gradle/caches/transforms-3/a1c5e08825da8b3508fd7a457a086ebc/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tiostwn/.gradle/caches/transforms-3/a1c5e08825da8b3508fd7a457a086ebc/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/e44061604b05eec77adf483bffd85fb0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/e44061604b05eec77adf483bffd85fb0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:22:9-41
+	android:fullBackupContent
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:20:9-54
+	android:roundIcon
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:23:9-54
+	tools:targetApi
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:26:9-29
+	android:icon
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:21:9-43
+	android:allowBackup
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:25:9-46
+	android:dataExtractionRules
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:19:9-65
+activity#com.armand.batikhub.MainActivity
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:28:9-36:20
+	android:label
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:31:13-45
+	android:exported
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:32:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:34:27-74
+activity#com.armand.batikhub.PredictionResultActivity
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:38:9-39:39
+	android:exported
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:38:19-59
+activity#androidx.navigation.fragment.NavHostFragment
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:52:9-53:45
+	tools:ignore
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:53:13-42
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:52:19-78
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:46:13-48:54
+	android:resource
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:48:17-51
+	android:name
+		ADDED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml:47:17-67
+uses-sdk
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/tiostwn/.gradle/caches/transforms-3/d64262d30dfd028fefb0db007e75e64f/transformed/viewbinding-8.2.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/tiostwn/.gradle/caches/transforms-3/d64262d30dfd028fefb0db007e75e64f/transformed/viewbinding-8.2.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f200908b815b7ed9fd4773d7155955ab/transformed/navigation-common-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f200908b815b7ed9fd4773d7155955ab/transformed/navigation-common-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ceb3b630dc82b5cf6d5c1e6750dc4d22/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ceb3b630dc82b5cf6d5c1e6750dc4d22/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/bc042b67814d629ab2ad2984d317c558/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/bc042b67814d629ab2ad2984d317c558/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ac087ee931866e15ba425f3dafa011e0/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/ac087ee931866e15ba425f3dafa011e0/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/48f306ee417ccb05ab4ef5328919c987/transformed/navigation-fragment-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/48f306ee417ccb05ab4ef5328919c987/transformed/navigation-fragment-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/d7a1428b8b6736920e96814a807292a4/transformed/navigation-fragment-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/d7a1428b8b6736920e96814a807292a4/transformed/navigation-fragment-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/9fb483460b0e3731ca163b8729637a3f/transformed/navigation-ui-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/9fb483460b0e3731ca163b8729637a3f/transformed/navigation-ui-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/c71e3a63223d2f49a6b57933e2c7168b/transformed/navigation-ui-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.6.0] /Users/tiostwn/.gradle/caches/transforms-3/c71e3a63223d2f49a6b57933e2c7168b/transformed/navigation-ui-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/tiostwn/.gradle/caches/transforms-3/337e34332cf4bec5cb62ffb73e0c3b27/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/tiostwn/.gradle/caches/transforms-3/337e34332cf4bec5cb62ffb73e0c3b27/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tiostwn/.gradle/caches/transforms-3/a1c5e08825da8b3508fd7a457a086ebc/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tiostwn/.gradle/caches/transforms-3/a1c5e08825da8b3508fd7a457a086ebc/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/f880cc1c3e36c0c4b347845a9fccfd59/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/f880cc1c3e36c0c4b347845a9fccfd59/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/60b492a510ec931c8abbf232e0a5612c/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/tiostwn/.gradle/caches/transforms-3/60b492a510ec931c8abbf232e0a5612c/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/e3779211110e7e7363a092096e8e5517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/e3779211110e7e7363a092096e8e5517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/43e07bfc22f434b6829fa482b36478eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/43e07bfc22f434b6829fa482b36478eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f3f7438be94c5a2586129be9542e1aee/transformed/fragment-ktx-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f3f7438be94c5a2586129be9542e1aee/transformed/fragment-ktx-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f5f8bdc054be29dabad018543dfd8a80/transformed/fragment-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.0] /Users/tiostwn/.gradle/caches/transforms-3/f5f8bdc054be29dabad018543dfd8a80/transformed/fragment-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/c14829fa2f129e4c89cf5945064fe2f3/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/tiostwn/.gradle/caches/transforms-3/c14829fa2f129e4c89cf5945064fe2f3/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/5546cce9dcb60f35250f341d0240034f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/5546cce9dcb60f35250f341d0240034f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /Users/tiostwn/.gradle/caches/transforms-3/c04cd7c4dbca882bd47bb8ef3eae1c09/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/tiostwn/.gradle/caches/transforms-3/c04cd7c4dbca882bd47bb8ef3eae1c09/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/fac8873912f329e8ec858b1542e5eaef/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/fac8873912f329e8ec858b1542e5eaef/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/b32a1958faa0268f872a3ca4a69a0815/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/b32a1958faa0268f872a3ca4a69a0815/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/269866e44f1679704c05a22004bd96f5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/269866e44f1679704c05a22004bd96f5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/e4bd6bc793385d35014d09a0daf08d7f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/e4bd6bc793385d35014d09a0daf08d7f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06715fd874cd9812eceab5de0c10c233/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06715fd874cd9812eceab5de0c10c233/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/5b5993d18bcbb605c3c00d6e0023f074/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/5b5993d18bcbb605c3c00d6e0023f074/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/500766e79ad040e96a8c6ec6afac8a4b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/500766e79ad040e96a8c6ec6afac8a4b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/c84f9dfec168e48f8d66cb61fe8b5935/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/tiostwn/.gradle/caches/transforms-3/c84f9dfec168e48f8d66cb61fe8b5935/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/13c7aa4412f57883c435d4ffea80fc4f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/13c7aa4412f57883c435d4ffea80fc4f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/dd5bf7646a22a18020a2053e33d32a88/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/tiostwn/.gradle/caches/transforms-3/dd5bf7646a22a18020a2053e33d32a88/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d7343b270bab0cb8a9fc584b9c2dbb07/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d7343b270bab0cb8a9fc584b9c2dbb07/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/aa17826a1efedf74a38a1302d265141d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/aa17826a1efedf74a38a1302d265141d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/803160c04cb3779c01c93e52e12738b1/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/803160c04cb3779c01c93e52e12738b1/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/5cc4fd7bc44674266a738e5ebb966f5c/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/5cc4fd7bc44674266a738e5ebb966f5c/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/eaf4098f7f2e5a321bd276b2ce870aa2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/eaf4098f7f2e5a321bd276b2ce870aa2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d8c23ae62514d126668047c47706591f/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/d8c23ae62514d126668047c47706591f/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/29c6ab28febf7d4aa40d35945fb8a2e1/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/29c6ab28febf7d4aa40d35945fb8a2e1/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/a0deec19768cbe850a85da7400e9eea2/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/a0deec19768cbe850a85da7400e9eea2/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/06c7ac21f2ec2667826c3884ae78d031/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/06c7ac21f2ec2667826c3884ae78d031/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/b76e5a7dfe7756ead419f7ef145b568e/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/b76e5a7dfe7756ead419f7ef145b568e/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/tiostwn/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/tiostwn/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/85968db88edcf3bb1a8ca9d1d120de35/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/85968db88edcf3bb1a8ca9d1d120de35/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/425c79b41c5100e4c9e6d62d316150ce/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/425c79b41c5100e4c9e6d62d316150ce/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06c0de05be1d7b07fa7c8604eba58308/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/06c0de05be1d7b07fa7c8604eba58308/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/e44061604b05eec77adf483bffd85fb0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/e44061604b05eec77adf483bffd85fb0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/d83189a816d932a46931c06bc672e412/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/d83189a816d932a46931c06bc672e412/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/tiostwn/.gradle/caches/transforms-3/ee63aad40962667e9ebfadbe25b1116c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/tiostwn/.gradle/caches/transforms-3/ee63aad40962667e9ebfadbe25b1116c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/9df73e7003301e6fd55fe85a9a84be59/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/9df73e7003301e6fd55fe85a9a84be59/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/7b115708b95e2006844688cb5d0e7417/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/7b115708b95e2006844688cb5d0e7417/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/3d2071ecff002f078b1511d7965c37b5/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/3d2071ecff002f078b1511d7965c37b5/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tiostwn/Documents/3.Bangkit/BatikHub/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/tiostwn/.gradle/caches/transforms-3/bd50c3342304ece3fc0f4987dbf8e037/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/tiostwn/.gradle/caches/transforms-3/9dba3473c2e7ab91e493b9371a42d8d3/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/tiostwn/.gradle/caches/transforms-3/108abe6471b017e5481657b16c1015d6/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.armand.batikhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.armand.batikhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/tiostwn/.gradle/caches/transforms-3/d16141837b1dfced26fb2d5628bc2c81/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/tiostwn/.gradle/caches/transforms-3/4c2924f70e8c04987f83fcfd1bb151d3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/tiostwn/.gradle/caches/transforms-3/ee77c6148e535550acd02ec4a55fcb7f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
