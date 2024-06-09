@@ -28,24 +28,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewName"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nama_batik"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:paddingBottom="2dp" />
+                android:text="@{batik.name}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
-                android:id="@+id/textViewPercentage"
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/persentase"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:paddingBottom="2dp" />
+                android:text="@{batik.description}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         </LinearLayout>
 
         <TextView

@@ -36,4 +36,6 @@
     <string name="UI_info_successful_register_user">New user registration is successful, please login using the registered email and password</string>
     <string name="const_text_email">Email</string>
     <string name="const_text_password">Password</string>
+    <string name="button_text_masuk">Masuk</string>
+    <string name="not_have_account">Kamu belum punya akun?</string>
 </resources>

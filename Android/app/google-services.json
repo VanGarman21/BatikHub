@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481984325966",
+    "project_id": "batikhub-adae6",
+    "storage_bucket": "batikhub-adae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481984325966:android:d2fa7c820a828792bc961f",
+        "android_client_info": {
+          "package_name": "com.armand.batikhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIl3DvMc8wMKIy-WJaHI5wNZBeSkKkAYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
