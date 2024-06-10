@@ -11,18 +11,18 @@ dotenv.config();
 // Predict the item inputed
 route.post('/', (req, res) => {
     try {
-        res.send('Ini endpoint untuk post predict');
+        return res.send('Ini endpoint untuk post predict');
     } catch(error) {
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 });
 
 // Get histories of predictions
 route.get('/', accessValidation, (req, res) => {
     try {
-        res.send('ini endpoint untuk riwayat prediksi');
+        return res.send('ini endpoint untuk riwayat prediksi');
     } catch(error) {
-        res.status(500).json({ message: 'Internal server error!' });
+        return res.status(500).json({ message: 'Internal server error!' });
     }
 });
 

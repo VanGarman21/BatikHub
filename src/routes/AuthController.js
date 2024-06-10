@@ -1,6 +1,7 @@
 const route = require('express').Router();
 const dotenv = require('dotenv');
 const { PrismaClient } = require('@prisma/client');
+const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -19,7 +20,16 @@ const generateToken = (user) => {
 }
 
 // Register route
-route.post('/register', async (req, res) => {
+route.post('/register', [
+    body('name').notEmpty().withMessage('Name is required!'),
+    body('email').isEmail().withMessage('Enter a valid email address!')
+], async (req, res) => {
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ message: errors.array()[0].msg });
+    }
+    
     const { name, email, password } = req.body;
 
     try {
@@ -41,7 +51,7 @@ route.post('/register', async (req, res) => {
             }
         });
         // const token = generateToken(payload);
-        return res.json({ 
+        return res.status(200).json({ 
             message: 'Register success!',
             data: createUser
         });
@@ -64,6 +74,7 @@ route.post('/login', async (req, res) => {
         const validatePassword = await bcrypt.compare(password, userExist.password);
         if(validatePassword) {
             const token = generateToken(userExist);
+            res.cookie('auth_token', token, { maxAge: '3600000' })
             return res.status(200).json({
                 message: 'Login success!',
                 data: userExist,

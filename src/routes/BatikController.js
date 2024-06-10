@@ -51,6 +51,10 @@ route.post('/name', async (req, res) => {
     const { name } = req.body;
 
     try {
+        // if( {name} = ''){
+        //     return res.json({ message: "Type some batik name!" });
+        // }
+        
         const selectedBatik = await prisma.batik.findFirst({
             where: { name }
         });

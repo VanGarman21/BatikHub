@@ -1,28 +1,34 @@
-const { PrismaClient } = require('@prisma/client');
-const jwt = require('jsonwebtoken');
+const fs = require('fs');
+const admin = require('firebase-admin');
 const dotenv = require('dotenv');
+// const serviceAccount = require('../utils/batikhub-service-account.json');
 
-const prisma = new PrismaClient();
 dotenv.config();
 
-const accessValidation = (req, res, next) => {
-    const { authorization } = req.headers;
+const serviceAccountPath = process.env.SERVICE_ACCOUNT;
+const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf-8'));
+// console.log(serviceAccount);
 
-    if(!authorization) {
-        res.status(401).json({ message: 'Token needed!' });
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+});
+
+const accessValidation = async (req, res, next) => {
+    const headerToken = req.headers.authorization;
+
+    if(!headerToken) {
+        return res.status(401).json({ message: 'Unauthorized Access: Token Needed!' });
     }
 
-    const token = authorization.split(' ')[1];
-    const secret = process.env.JWT_SECRET;
+    const token = headerToken.split(' ')[1];
 
     try {
-        const decode = jwt.verify(token, secret);
+        const decode = await admin.auth().verifyIdToken(token);
         req.user = decode;
+        next();
     } catch(error) {
-        return res.status(401).json({ message: 'Unauthorized!' })
+        return res.status(401).json({ message: 'Unauthorized Access: Invalid Token!' })
     }
-
-    next();
 }
 
 module.exports = accessValidation;
