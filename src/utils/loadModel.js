@@ -1,7 +1,7 @@
 const tf = require('@tensorflow/tfjs-node');
 require('dotenv').config();
 
-const LoadModel = () => {
+const LoadModel = async () => {
     return tf.loadLayersModel(process.env.MODEL_URL);
 }
 

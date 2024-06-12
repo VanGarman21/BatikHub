@@ -1,7 +1,6 @@
 const fs = require('fs');
 const admin = require('firebase-admin');
 const dotenv = require('dotenv');
-// const serviceAccount = require('../utils/batikhub-service-account.json');
 
 dotenv.config();
 

@@ -8,18 +8,10 @@ datasource db {
 }
 
 model Batik {
-  id              String   @id @unique @default(uuid())
+  id              String   @id @default(uuid())
   name            String   @db.VarChar(255)
   regional_origin String   @db.VarChar(255)
   description     String   @db.VarChar(500)
   image           String   @db.VarChar(255)
   createdAt       DateTime @default(now())
-}
-
-model User {
-  id        String   @id @unique @default(uuid())
-  name      String   @db.VarChar(255)
-  email     String   @unique @db.VarChar(255)
-  password  String   @db.VarChar(255)
-  createdAt DateTime @default(now())
 }
