@@ -16,11 +16,9 @@
 
         <ImageView
             android:id="@+id/img_preview_photo"
-            android:layout_width="361dp"
+            android:layout_width="match_parent"
             android:layout_height="457dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="24dp"
             android:contentDescription="@string/masukan_gambar"
             android:src="@drawable/baseline_image_24"
             app:tint="@color/base_icon" />
