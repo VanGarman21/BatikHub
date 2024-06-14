@@ -10,7 +10,11 @@ dotenv.config();
 // Get all batik from database
 route.get('/', async (req, res) => {
     try {
-        const batiks = await prisma.batik.findMany();
+        const batiks = await prisma.batik.findMany({
+            orderBy: {
+                name: 'asc'
+            }
+        })
         return res.status(200).json({ 
             message: 'Get all batik success!', 
             data: batiks
@@ -55,17 +59,36 @@ route.post('/name', async (req, res) => {
         //     return res.json({ message: "Type some batik name!" });
         // }
         
-        const selectedBatik = await prisma.batik.findFirst({
-            where: { name }
+        // const selectedBatik = await prisma.batik.findFirst({
+        //     where: { name }
+        // });
+
+        const selectedBatik = await prisma.batik.findMany({
+            where: { 
+                name: {
+                    contains: name
+                } 
+            }
         });
 
-        if(selectedBatik) {
+        const batikFound = selectedBatik.length;
+
+        // if(selectedBatik) {
+        //     return res.status(200).json({
+        //         message: 'Get batik from name success!',
+        //         data: selectedBatik
+        //     });
+        // } else {
+        //     return res.status(404).json({ message: 'Batik not found! (Write correct and full batik name, ex: Batik Bali)' });
+        // }
+
+        if(batikFound > 0) {
             return res.status(200).json({
                 message: 'Get batik from name success!',
                 data: selectedBatik
             });
         } else {
-            return res.status(404).json({ message: 'Batik not found! (Write correct and full batik name, ex: Batik Bali)' });
+            return res.status(404).json({ message: 'Batik not found!' });
         }
     } catch(error) {
         console.log(error);

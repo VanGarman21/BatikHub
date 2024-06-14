@@ -8,7 +8,7 @@ datasource db {
 }
 
 model Batik {
-  id              String   @id @default(uuid())
+  id              String   @id @unique @default(uuid())
   name            String   @db.VarChar(255)
   regional_origin String   @db.VarChar(255)
   description     String   @db.VarChar(500)

@@ -21,7 +21,7 @@ const batiks = [
     },
     
     {
-        name: 'Batik Cenderawasih',
+        name: 'Batik Cendrawasih',
         regional_origin: 'Papua',
         description: 'Batik Cenderawasih menampilkan motif burung cenderawasih, burung khas Papua yang terkenal dengan bulu yang indah. Motif ini melambangkan keindahan alam Papua dan sering kali dikombinasikan dengan elemen-elemen alam lainnya.',
         image: 'https://storage.googleapis.com/fotobatik/BATIKIMG/BATIK%20CENDRAWASIH.jpg'
@@ -105,4 +105,4 @@ const batiks = [
     },
 ]
 
-module.exports = batiks;
+module.exports = batiks;
