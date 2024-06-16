@@ -13,10 +13,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="383dp"
-            android:layout_height="388dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
             android:contentDescription="@string/your_image_desc"
-            android:src="@drawable/batikhub" />
+            android:src="@drawable/onboarding3" />
 
         <TextView
             android:layout_width="match_parent"
@@ -25,12 +25,14 @@
             android:text="@string/judul_halaman_3"
             android:textColor="@color/base_label"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="4dp"
+            android:lineSpacingExtra="6dp"
             android:paddingTop="8dp"
             android:text="@string/deskripsi_halaman_3"
             android:textColor="@color/base_secondary" />

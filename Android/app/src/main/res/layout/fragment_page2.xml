@@ -13,10 +13,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="385dp"
-            android:layout_height="421dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
             android:contentDescription="@string/your_image_desc"
-            android:src="@drawable/batikhub" />
+            android:src="@drawable/onboarding2" />
 
 
         <TextView
