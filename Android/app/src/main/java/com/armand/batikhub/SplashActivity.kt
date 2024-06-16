@@ -9,6 +9,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -26,16 +27,12 @@ class SplashActivity : AppCompatActivity() {
         }
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val sharedPref = getSharedPreferences("MyPref", MODE_PRIVATE)
-            val isLoggedIn = sharedPref.getBoolean("isLoggedIn", false)
+            val isLoggedIn = FirebaseAuth.getInstance().currentUser != null
             if (isLoggedIn) {
                 startActivity(Intent(this, MainActivity::class.java))
             } else {
                 startActivity(Intent(this, LoginActivity::class.java))
             }
-
-
-//            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 3000) // Delay 3 detik
     }

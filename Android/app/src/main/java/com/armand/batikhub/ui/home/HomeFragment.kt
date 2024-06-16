@@ -82,6 +82,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         // Logout dari FirebaseAuth
         FirebaseAuth.getInstance().signOut()
+        Toast.makeText(context, "Logout successful", Toast.LENGTH_SHORT).show()
 
         // Navigasi kembali ke layar login
         findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
