@@ -1,6 +1,7 @@
 package com.armand.batikhub.ui.home
 
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.armand.batikhub.LoginActivity
 import com.armand.batikhub.R
 import com.armand.batikhub.adapter.HomeAdapter
 import com.armand.batikhub.api.ApiModule
@@ -83,6 +85,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         // Logout dari FirebaseAuth
         FirebaseAuth.getInstance().signOut()
         Toast.makeText(context, "Logout successful", Toast.LENGTH_SHORT).show()
+        val intent = Intent(context, LoginActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
 
         // Navigasi kembali ke layar login
         findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
