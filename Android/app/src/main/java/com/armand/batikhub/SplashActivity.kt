@@ -33,6 +33,9 @@ class SplashActivity : AppCompatActivity() {
             } else {
                 startActivity(Intent(this, LoginActivity::class.java))
             }
+
+
+//            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 3000) // Delay 3 detik
     }

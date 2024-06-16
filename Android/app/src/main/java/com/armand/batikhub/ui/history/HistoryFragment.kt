@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.armand.batikhub.BatikAdapter
 import com.armand.batikhub.BatikItem
 import com.armand.batikhub.databinding.FragmentRiwayatBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class HistoryFragment : Fragment() {
@@ -34,14 +35,20 @@ class HistoryFragment : Fragment() {
     }
 
     private fun loadData() {
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val userId = currentUser?.uid
+
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val batikList = mutableListOf<BatikItem>()
                 for (snapshot in dataSnapshot.children) {
                     val batik = snapshot.getValue(BatikItem::class.java)
-                    batik?.let { batikList.add(it) }
+                    if (batik?.userId == userId) {  // Filter berdasarkan userId
+                        if (batik != null) {
+                            batikList.add(batik)
+                        }
+                    }
                 }
-                // Tambahkan pemeriksaan null untuk binding
                 if (_binding != null) {
                     binding.recyclerView.adapter = BatikAdapter(batikList)
                 }

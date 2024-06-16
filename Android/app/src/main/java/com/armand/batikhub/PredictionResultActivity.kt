@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.armand.batikhub.model.PredictionResultResponse
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
 class PredictionResultActivity : AppCompatActivity() {
@@ -43,7 +44,9 @@ class PredictionResultActivity : AppCompatActivity() {
             // Save to Firebase
             val database = FirebaseDatabase.getInstance()
             val myRef = database.getReference("batik")
-            val batikItem = BatikItem(name, imageUrl, date)
+            val currentUser = FirebaseAuth.getInstance().currentUser
+            val userId = currentUser?.uid ?: "Unknown User"
+            val batikItem = BatikItem(name, imageUrl, date, userId)
             myRef.push().setValue(batikItem)
         } else {
             // Handle the case where result is null
