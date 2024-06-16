@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.armand.batikhub.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
-    <action
-        android:id="@+id/action_homeFragment_to_Page1Fragment"
-        app:destination="@id/navigation_page1" />
+        <action
+            android:id="@+id/action_homeFragment_to_Page1Fragment"
+            app:destination="@id/navigation_page1" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginActivity" />
     </fragment>
 
     <fragment
@@ -47,7 +50,7 @@
             app:destination="@id/Page3Fragment" />
         <action
             android:id="@+id/action_page2Fragment_to_page1Fragment"
-            app:destination="@id/Page1Fragment" />
+            app:destination="@id/navigation_page1" />
     </fragment>
 
     <fragment
@@ -62,4 +65,10 @@
             android:id="@+id/action_page3Fragment_to_page2Fragment"
             app:destination="@id/Page2Fragment" />
     </fragment>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.armand.batikhub.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>

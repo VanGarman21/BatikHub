@@ -1,5 +1,6 @@
 package com.armand.batikhub.ui.home
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -18,6 +19,8 @@ import com.armand.batikhub.R
 import com.armand.batikhub.adapter.HomeAdapter
 import com.armand.batikhub.api.ApiModule
 import com.armand.batikhub.model.BatikResponse
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -45,6 +48,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         btnInfo.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_Page1Fragment)
         }
+
+        // Setup logout button
+        val logoutButton: ImageView = view.findViewById(R.id.logout_btn)
+        logoutButton.setOnClickListener {
+            // Implementasi logout, misalnya clear shared preferences atau reset user session
+            performLogout()
+//            // Navigasi kembali ke layar login atau intro screen
+//            findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
+        }
+
         val searchButton = view.findViewById<Button>(R.id.btn_search)
         searchButton.setOnClickListener {
             val searchText = view.findViewById<EditText>(R.id.et_query).text.toString()
@@ -60,6 +73,18 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         }
         fetchBatik()
+    }
+
+    private fun performLogout() {
+        // Contoh: Hapus data pengguna dari SharedPreferences
+        val sharedPreferences = requireActivity().getSharedPreferences("YourPrefName", Context.MODE_PRIVATE)
+        sharedPreferences.edit().clear().apply()
+
+        // Logout dari FirebaseAuth
+        FirebaseAuth.getInstance().signOut()
+
+        // Navigasi kembali ke layar login
+        findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
     }
 
     private fun fetchBatik() {
