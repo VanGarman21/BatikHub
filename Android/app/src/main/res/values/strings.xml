@@ -38,4 +38,13 @@
     <string name="const_text_password">Password</string>
     <string name="button_text_masuk">Masuk</string>
     <string name="not_have_account">Kamu belum punya akun?</string>
+    <string name="detail_batik">Nama Batik</string>
+    <string name="asalmotif">AsalMotif</string>
+    <string name="desc">desc</string>
+    <string name="persen">66%</string>
+    <string name="datee">23-05-2024 | 21:21</string>
+    <string name="cari">Cari</string>
+    <string name="titlehistory">nama : persentase</string>
+    <string name="datehsitory">tgl-bulan-tahun</string>
+    <string name="descprediction">DescPrediction</string>
 </resources>

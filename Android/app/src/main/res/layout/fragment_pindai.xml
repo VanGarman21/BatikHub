@@ -20,8 +20,7 @@
             android:layout_height="457dp"
             android:layout_marginTop="16dp"
             android:contentDescription="@string/masukan_gambar"
-            android:src="@drawable/baseline_image_24"
-            app:tint="@color/base_icon" />
+            android:src="@drawable/baseline_image_24"/>
 
         <LinearLayout
             android:layout_width="match_parent"
