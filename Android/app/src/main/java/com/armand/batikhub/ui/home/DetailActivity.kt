@@ -2,6 +2,7 @@ package com.armand.batikhub.ui.home
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -30,6 +31,9 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_batik)
+
+        supportActionBar?.hide()
+        window.statusBarColor = Color.BLACK
 
         val batikId = intent.getStringExtra("BATIK_ID")
         Log.d("DetailActivity", "Received batik ID: $batikId")

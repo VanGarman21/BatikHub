@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="8dp"
+    android:padding="12dp"
     android:background="?attr/selectableItemBackground">
 
     <ImageView
@@ -31,6 +31,9 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/base_label"
                 android:text="@string/titlehistory"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 

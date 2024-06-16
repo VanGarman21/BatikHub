@@ -1,11 +1,14 @@
 package com.armand.batikhub.ui.home
 
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +28,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        (activity as? AppCompatActivity)?.supportActionBar?.hide()
+
+        // Change the status bar color to white
+        requireActivity().window.statusBarColor = ContextCompat.getColor(requireContext(), android.R.color.white)
+
+        // Set the status bar text/icons to black
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requireActivity().window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
 
         val searchButton = view.findViewById<Button>(R.id.btn_search)
         searchButton.setOnClickListener {

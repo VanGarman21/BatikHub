@@ -5,6 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.armand.batikhub.databinding.ItemBatikBinding
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 
 class BatikAdapter(private val batikList: List<BatikItem>) : RecyclerView.Adapter<BatikAdapter.BatikViewHolder>() {
 
@@ -20,8 +23,11 @@ class BatikAdapter(private val batikList: List<BatikItem>) : RecyclerView.Adapte
                 binding.textViewDateTime.text = date
                 // Memuat gambar menggunakan Glide
                 if (imageUrl != null) {
+
+
                     Glide.with(holder.itemView.context)
                         .load(imageUrl)
+                        .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(16)))
                         .into(binding.imageView)
                 }
             }

@@ -1,7 +1,10 @@
 package com.armand.batikhub
 
+import android.graphics.Color
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +15,15 @@ class PredictionResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prediction_result)
+
+        supportActionBar?.hide()
+
+        window.statusBarColor = Color.WHITE
+
+        // Set status bar text to black (light status bar icons)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
 
         val imageUri = intent.getStringExtra("imageUri")
         val imageView = findViewById<ImageView>(R.id.imageViewScannedBatik)
