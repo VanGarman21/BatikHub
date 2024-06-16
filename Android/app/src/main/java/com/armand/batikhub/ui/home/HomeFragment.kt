@@ -6,10 +6,12 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.armand.batikhub.R
@@ -39,6 +41,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             requireActivity().window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
+        val btnInfo: ImageView = view.findViewById(R.id.btn_info)
+        btnInfo.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_Page1Fragment)
+        }
         val searchButton = view.findViewById<Button>(R.id.btn_search)
         searchButton.setOnClickListener {
             val searchText = view.findViewById<EditText>(R.id.et_query).text.toString()
