@@ -5,10 +5,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.room.Room
-import com.armand.batikhub.database.AppDatabase
-import com.armand.batikhub.database.BatikHistory
 import com.armand.batikhub.model.PredictionResultResponse
+import com.google.firebase.database.FirebaseDatabase
 
 class PredictionResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,19 +24,15 @@ class PredictionResultActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.textView6).text = result.date
             findViewById<TextView>(R.id.textView7).text = result.desc
 
-            // Simpan ke database
-            val db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "batikhub").build()
-            val batikHistory = BatikHistory(
-                imageUri = imageUri.toString(),
-                label = result.label ?: "",
-                percentage = result.percentage ?: 0,
-                date = result.date ?: "",
-                description = result.desc ?: ""
-            )
-            Thread {
-                db.batikHistoryDao().insert(batikHistory)
-            }.start()
+            val name = "${result.label} - ${result.percentage}%"
+            val date = result.date ?: "No date provided"
+            val imageUrl = imageUri ?: "No image"
 
+            // Save to Firebase
+            val database = FirebaseDatabase.getInstance()
+            val myRef = database.getReference("batik")
+            val batikItem = BatikItem(name, imageUrl, date)
+            myRef.push().setValue(batikItem)
         } else {
             // Handle the case where result is null
             findViewById<TextView>(R.id.textViewPredictionResult).text = "Prediction result is null"

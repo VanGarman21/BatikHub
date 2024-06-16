@@ -55,18 +55,22 @@ class ScanFragment : Fragment() {
         }
     }
 
-    private fun saveBitmapToFile(context: Context, bitmap: Bitmap?): File? {
-        if (bitmap == null) {
-            Log.e("Save Bitmap", "Bitmap is null")
-            return null
-        }
+    fun saveBitmapToFile(context: Context, bitmap: Bitmap?): File? {
+        if (bitmap == null) return null
 
-        val filename = "pindai_batik_temp.jpeg" // Pastikan ekstensi file sesuai
+        // Mendapatkan counter dari SharedPreferences
+        val prefs = context.getSharedPreferences("BatikHubPrefs", Context.MODE_PRIVATE)
+        var fileCounter = prefs.getInt("fileCounter", 0)
+
+        val filename = "pindai_batik_${fileCounter++}.jpeg"
         val file = File(context.cacheDir, filename)
         file.createNewFile()
 
+        // Menyimpan counter yang diperbarui
+        prefs.edit().putInt("fileCounter", fileCounter).apply()
+
         val fOut = FileOutputStream(file)
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fOut) // Pastikan format sesuai
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fOut)
         fOut.flush()
         fOut.close()
 
