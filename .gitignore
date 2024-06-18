@@ -5,3 +5,4 @@ src/utils/batikhub-service-account.json
 prisma/migrations/
 prisma/migrations/migration_lock.toml
 sql.js
+Dockerfile
