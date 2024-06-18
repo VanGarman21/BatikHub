@@ -44,16 +44,18 @@ route.post('/', upload.single('image'), async (req, res) => {
         const [{ value: day },, { value: month },, { value: year },, { value: hour },, { value: minute }] = dateId.formatToParts(now);
         const date = `${day}-${month}-${year} | ${hour}:${minute}`;
 
-        const img = batik.image;
         const desc = batik.description;
 
-        return res.status(200).json({ 
-            message: 'Image predicted succesfully! (this will not be posted to Cloud SQL database)',
-            img,
+        const predictedBatik = {
             label,
             percentage,
             date,
             desc
+        };
+
+        return res.status(200).json({ 
+            message: 'Image predicted succesfully!',
+            data: predictedBatik
         });
     } catch(error) {
         return res.status(500).json({ message: 'Internal server error!' });

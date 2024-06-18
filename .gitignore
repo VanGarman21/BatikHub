@@ -1,8 +1,5 @@
-# Keep environment variables out of version control
-.env
-node_modules
-src/utils/batikhub-service-account.json
-prisma/migrations/
-prisma/migrations/migration_lock.toml
-sql.js
 Dockerfile
+node_modules
+prisma/migrations/
+sql.js
+.env
