@@ -5,7 +5,7 @@ BatikHub is an application designed to classify various types of batik motifs ba
 
 # Batikhub Demo
 
-https://github.com/VanGarman21/BatikHub/assets/100523471/34c393ad-e0f0-4d76-b278-df32ebd61ea1
+![Alt Text](https://github.com/VanGarman21/BatikHub/assets/100523471/848013fa-acde-4b0e-85f0-c23a2ab5fcd1)
 
 
 # Project Documents:
