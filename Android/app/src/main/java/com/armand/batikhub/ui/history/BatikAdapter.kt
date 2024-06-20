@@ -1,8 +1,9 @@
-package com.armand.batikhub
+package com.armand.batikhub.ui.history
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.armand.batikhub.BatikItem
 import com.armand.batikhub.databinding.ItemBatikBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
