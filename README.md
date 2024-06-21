@@ -1,4 +1,3 @@
-# batikhub
 # Cloud Computing Path
 
 Creating **RESTful APIs** using NodeJS (Express) and deploying to [Google Cloud Platform](https://cloud.google.com) by using [Google Cloud run](https://cloud.google.com/run) for connection between android application and database. Using Cloud SQL and Sequelize for creating the database server, and Cloud Storage for images storage.
@@ -12,11 +11,52 @@ Explanation for each URL that can be used :
 Base URL
 > https://batikhub-api-smdkgsrncq-et.a.run.app
 
-## Plant Route
+## Batik Route
 
-### Plant Endpoints
+#### Get All Batik 
 
-#### Get All Plants 
+**Endpoint :**
+
+> `GET /batik`
+
+**Description :**
+
+> Retrieves data for all Batik. 
+
+**Parameters:**
+- None
+
+**Headers:**
+- None
+
+**Response:**
+
+- **Success:**
+    ```json
+    {
+        "message": "Get all batik success!",
+        "data": [
+            {
+                "id": "string",
+                "name": "string",
+                "regional_origin": "string",
+                "description": "string",
+                "image": "string",
+                "createdAt": "DateTime"
+            }
+        ]
+    }
+    ```
+
+- **Error:**
+    ```json
+    {
+        "message": "Internal Server Error"
+    }
+    ```
+    Status Code: 500 Internal Server Error
+
+### Get Batik by Id
 
 **Method :**
 
@@ -24,25 +64,17 @@ Base URL
 
 **Base URL :**
 
-> `/plants`
+> `/batik/id/:id`
 
 **Description :**
 
-> Retrieves data for all plants. 
+> Retrieves data for a specific batik based on the batik ID.
 
-**Response :**
+## batik Route
 
-- Status Code : 200 (OK)
-- Body		      : Success message and an array of plant objects.
+### batik Endpoints
 
-**Error Response :**
-
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an internal server error.
-
-<br>
-
-#### Get Plant by ID
+#### Get All batiks  
 
 **Method :**
 
@@ -50,95 +82,27 @@ Base URL
 
 **Base URL :**
 
-> `/plants/id/:id`
+> `/batiks`
 
 **Description :**
 
-> Retrieves data for a specific plant based on the plant ID.
-
-**URL Parameters :**
-
-> `id`   : The ID of the plant. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      : Success message and the plant object.
-
-**Error Response :**
-
-- Status Code : 404 (Not Found)
-- Body        : Error message if the plant with the specified ID was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an internal server error. 
-
-<br>
-
-#### Get Plant by name 
-
-**Method :**
-
-> `GET`
-
-**Base URL :**
-
-> `/plants/name/:name`  
-
-**Description :**
-
-> Retrieves data for a specific plant based on the plant name.
-
-**URL Parameters :**
-
-> `name`   : The name of the plant. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      : Success message and the plant object.
-
-**Error Response :**
-
-- Status Code : 404 (Not Found)
-- Body        : Error message if the plant with the specified name was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an internal server error. 
-
-<br>
-
-## Disease Route
-
-### Disease Endpoints
-
-#### Get All Diseases  
-
-**Method :**
-
-> `GET`
-
-**Base URL :**
-
-> `/diseases`
-
-**Description :**
-
-> Retrieves information for all diseases. 
+> Retrieves information for all batiks. 
 
 **Response :**
 
 - Status Code : 200 (OK)
 - Body		      :
   - message : Success message
-  - data    : Array of disease objects containing information about each disease. The `createdAt` and `updatedAt` fields are excluded.
+  - data    : Array of batik objects containing information about each batik. The `createdAt` and `updatedAt` fields are excluded.
 
 **Error Response :**
 
 - Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the diseases. 
+- Body        : Error message if there was an error retrieving the batiks. 
 
 <br>
 
-#### Get specific disease by disease ID 
+#### Get specific batik by batik ID 
 
 **Method :**
 
@@ -146,33 +110,33 @@ Base URL
 
 **Base URL :**
 
-> `/diseases/id/:id`
+> `/batiks/id/:id`
 
 **Description :**
 
-> Retrieves information about a specific disease identified by the provided 'id' parameter.
+> Retrieves information about a specific batik identified by the provided 'id' parameter.
 
 **URL Parameters :**
 
-> `id`   : The Unique identifier of the disease. 
+> `id`   : The Unique identifier of the batik. 
 
 **Response :**
 
 - Status Code : 200 (OK)
-- Body		      : Success message and the plant object.
+- Body		      : Success message and the batik object.
    - message  : Success message.
-   - data     : Object containing information about the specific disease. The `createdAt` and `updatedAt` fields are excluded.
+   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
      
 **Error Response :**
 
 - Status Code : 404 (Not Found)
-- Body        : Error message if the plant with the specified ID was not found.
+- Body        : Error message if the batik with the specified ID was not found.
 - Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the disease. 
+- Body        : Error message if there was an error retrieving the batik. 
 
 <br>
 
-#### Get specific disease by disease ID 
+#### Get specific batik by batik ID 
 
 **Method :**
 
@@ -180,63 +144,63 @@ Base URL
 
 **Base URL :**
 
-> `/diseases/name/:name`
+> `/batiks/name/:name`
 
 **Description :**
 
-> Retrieves information about a specific disease identified by the provided 'name' parameter.
+> Retrieves information about a specific batik identified by the provided 'name' parameter.
 
 **URL Parameters :**
 
-> `name`   : The name of the disease. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      : 
-   - message  : Success message.
-   - data     : Object containing information about the specific disease. The `createdAt` and `updatedAt` fields are excluded.
-     
-**Error Response :**
-
-- Status Code : 404 (Not Found)
-- Body        : Error message if the disease with the specified name was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the disease. 
-
-<br>
-
-#### Get specific disease by disease ID 
-
-**Method :**
-
-> `GET`
-
-**Base URL :**
-
-> `/diseases/name/:name`
-
-**Description :**
-
-> Retrieves information about a specific disease identified by the provided `name` parameter.
-
-**URL Parameters :**
-
-> `name`   : The name of the disease. 
+> `name`   : The name of the batik. 
 
 **Response :**
 
 - Status Code : 200 (OK)
 - Body		      : 
    - message  : Success message.
-   - data     : Object containing information about the specific disease. The `createdAt` and `updatedAt` fields are excluded.
+   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
      
 **Error Response :**
 
 - Status Code : 404 (Not Found)
-- Body        : Error message if the disease with the specified name was not found.
+- Body        : Error message if the batik with the specified name was not found.
 - Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the disease. 
+- Body        : Error message if there was an error retrieving the batik. 
+
+<br>
+
+#### Get specific batik by batik ID 
+
+**Method :**
+
+> `GET`
+
+**Base URL :**
+
+> `/batiks/name/:name`
+
+**Description :**
+
+> Retrieves information about a specific batik identified by the provided `name` parameter.
+
+**URL Parameters :**
+
+> `name`   : The name of the batik. 
+
+**Response :**
+
+- Status Code : 200 (OK)
+- Body		      : 
+   - message  : Success message.
+   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
+     
+**Error Response :**
+
+- Status Code : 404 (Not Found)
+- Body        : Error message if the batik with the specified name was not found.
+- Status Code : 500 (Internal Server Error)
+- Body        : Error message if there was an error retrieving the batik. 
 
 <br>
 
