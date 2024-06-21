@@ -17,7 +17,7 @@ BatikHub is an application designed to classify various types of batik motifs ba
 | ------ | ------ | ------ | ------ | ------ |
 | Adam Haidar Azizi  | M004D4KY1989   | https://github.com/HADAIZI | Develop and testing Models,  Develop finalmodel using mobilenet v2, Create notebook templates for model evaluation and testing, Convert the final model to TensorFlow.js (tfjs) and TensorFlow Lite (tflite).  | Done |
 | Arafat Dhiya 'Ulhaq  | M284D4KY2446  | https://github.com/pattt12 |  | Done |
-| Yohanes  | M180D4KY2893   | https://github.com/Y0hanesI |  | Done |
+| Yohanes  | M180D4KY2893   | https://github.com/Y0hanesI | Create and test a model, develop the model, and perform evaluating and testing | Done |
 | Lutfi Farhan Prayoga | C180D4KY0462  | https://github.com/lutfi015 |  | Done |
 | Daffa Farhan Raharja | C180D4KY1219  | https://github.com/FarhanGits |  | Done |
 | Hanafi Satriyo Utomo S.  | A004D4KY3627 | https://github.com/tiostwn | Create Sign Up XML and Fixed UI Changes in all page | Done |
