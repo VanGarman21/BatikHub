@@ -15,7 +15,7 @@ BatikHub is an application designed to classify various types of batik motifs ba
 ## Capstone Project Team: 
 | Name | Bangkit-ID | Github-Profile | Task | Progress On Task |
 | ------ | ------ | ------ | ------ | ------ |
-| Adam Haidar Azizi  | M004D4KY1989   | https://github.com/HADAIZI |  | Done |
+| Adam Haidar Azizi  | M004D4KY1989   | https://github.com/HADAIZI | Develop and testing Models,  Develop finalmodel using mobilenet v2, Create notebook templates for model evaluation and testing, Convert the final model to TensorFlow.js (tfjs) and TensorFlow Lite (tflite).  | Done |
 | Arafat Dhiya 'Ulhaq  | M284D4KY2446  | https://github.com/pattt12 |  | Done |
 | Yohanes  | M180D4KY2893   | https://github.com/Y0hanesI |  | Done |
 | Lutfi Farhan Prayoga | C180D4KY0462  | https://github.com/lutfi015 |  | Done |
