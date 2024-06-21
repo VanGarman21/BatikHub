@@ -1,6 +1,6 @@
 # Cloud Computing Path
 
-Creating **RESTful APIs** using NodeJS (Express) and deploying to [Google Cloud Platform](https://cloud.google.com) by using [Google Cloud run](https://cloud.google.com/run) for connection between android application and database. Using Cloud SQL and Sequelize for creating the database server, and Cloud Storage for images storage.
+Creating **RESTful APIs** using NodeJS (Express) and deploying to [Google Cloud Platform](https://cloud.google.com) by using [Google Cloud run](https://cloud.google.com/run) for connection between android application and database. Using Cloud SQL and Prisma for creating the database server, and Cloud Storage for images storage.
 
 # RESTful APIs
 In making the RESTful APIs we use NodeJS with the Express Framework for building an API server, and for responses using JSON format.
@@ -56,51 +56,52 @@ Base URL
     ```
     Status Code: 500 Internal Server Error
 
-### Get Batik by Id
+#### Get Batik by Id
 
-**Method :**
+**Endpoint :**
 
-> `GET`
-
-**Base URL :**
-
-> `/batik/id/:id`
+> `GET /batik`
 
 **Description :**
 
 > Retrieves data for a specific batik based on the batik ID.
 
-## batik Route
+**Parameters:**
+- `id` (string) - Batik ID
 
-### batik Endpoints
+**Headers:**
+- None
 
-#### Get All batiks  
+**Response:**
 
-**Method :**
+- **Success:**
+    ```json
+    {
+        "message": "Get selected batik success!",
+        "data": {
+            "id": "string",
+            "name": "string",
+            "regional_origin": "string",
+            "description": "string",
+            "image": "string",
+            "createdAt": "DateTime"
+        }
+    }
+    ```
 
-> `GET`
-
-**Base URL :**
-
-> `/batiks`
-
-**Description :**
-
-> Retrieves information for all batiks. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      :
-  - message : Success message
-  - data    : Array of batik objects containing information about each batik. The `createdAt` and `updatedAt` fields are excluded.
-
-**Error Response :**
-
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the batiks. 
-
-<br>
+- **Error:**
+    - 404 Not Found:
+        ```json
+        {
+            "message": "Batik not found!"
+        }
+        ```
+    - 500 Internal Server Error:
+        ```json
+        {
+            "message": "Internal Server Error"
+        }
+        ```
 
 #### Get specific batik by batik ID 
 
