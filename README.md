@@ -194,13 +194,14 @@ Base URL
 
 - **Error:**
     - 400 Bad Request:
-        json
+        ```json
         {
             "message": "Invalid input, file is required!"
         }
-        
+        ```
     - 500 Internal Server Error:
-        json
+        ```json
         {
             "message": "Internal Server Error"
         }
+        ```
