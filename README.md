@@ -1,6 +1,6 @@
 # Cloud Computing Path
 
-Creating **RESTful APIs** using NodeJS (Express) and deploying to [Google Cloud Platform](https://cloud.google.com) by using [Google Cloud run](https://cloud.google.com/run) for connection between android application and database. Using Cloud SQL and Prisma for creating the database server, and Cloud Storage for images storage.
+Creating **RESTful APIs** using NodeJS (Express) and deploying to [Google Cloud Platform](https://cloud.google.com) by using [Google Cloud run](https://cloud.google.com/run) for connection between android application and database. Using Cloud SQL and Prisma ORM for creating the database server, and Cloud Storage to store ML model and all batik images.
 
 # RESTful APIs
 In making the RESTful APIs we use NodeJS with the Express Framework for building an API server, and for responses using JSON format.
@@ -159,3 +159,48 @@ Base URL
 
 ### Predict Batik 
 
+**Endpoint :**
+
+> `POST /predict`
+
+**Description :**
+
+> Retrieves predicted batik motif based on user's image input.
+
+**Parameters:**
+- None
+
+**Body:**
+- `image` (File, multipart/form-data) - Batik image
+
+**Headers:**
+- None
+
+**Response:**
+
+- **Success:**
+    ```json
+    {
+        "message": "Get batik from name success!",
+        "data": {
+            "id": "string",
+            "label": "string",
+            "percentage": "number",
+            "date": "string",
+            "desc": "string"
+        }
+    }
+    ```
+
+- **Error:**
+    - 400 Bad Request:
+        json
+        {
+            "message": "Invalid input, file is required!"
+        }
+        
+    - 500 Internal Server Error:
+        json
+        {
+            "message": "Internal Server Error"
+        }
