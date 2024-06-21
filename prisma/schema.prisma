@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Batik {
+  id              String   @id @unique @default(uuid())
+  name            String   @db.VarChar(255)
+  regional_origin String   @db.VarChar(255)
+  description     String   @db.VarChar(500)
+  image           String   @db.VarChar(255)
+  createdAt       DateTime @default(now())
+}
