@@ -20,5 +20,5 @@ BatikHub is an application designed to classify various types of batik motifs ba
 | Yohanes  | M180D4KY2893   | https://github.com/Y0hanesI |  | Done |
 | Lutfi Farhan Prayoga | C180D4KY0462  | https://github.com/lutfi015 |  | Done |
 | Daffa Farhan Raharja | C180D4KY1219  | https://github.com/FarhanGits |  | Done |
-| Hanafi Satriyo Utomo S.  | A004D4KY3627 | https://github.com/tiostwn |  | Done |
+| Hanafi Satriyo Utomo S.  | A004D4KY3627 | https://github.com/tiostwn | Create Sign Up XML and Fixed UI Changes in all page | Done |
 | M. Armand Giovani  | A004D4KY4131  | https://github.com/VanGarman21 | Create Recyclerview Homefragment & HistoryFragment, Create Upload Image & Integration API Response | Done |
