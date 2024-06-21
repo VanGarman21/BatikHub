@@ -13,7 +13,7 @@ Base URL
 
 ## Batik Route
 
-#### Get All Batik 
+### Get All Batik 
 
 **Endpoint :**
 
@@ -56,11 +56,11 @@ Base URL
     ```
     Status Code: 500 Internal Server Error
 
-#### Get Batik by Id
+### Get Specified Batik by Id
 
 **Endpoint :**
 
-> `GET /batik`
+> `GET /batik/id/:id`
 
 **Description :**
 
@@ -103,105 +103,59 @@ Base URL
         }
         ```
 
-#### Get specific batik by batik ID 
+### Get specific batik by batik name 
 
-**Method :**
+**Endpoint :**
 
-> `GET`
-
-**Base URL :**
-
-> `/batiks/id/:id`
+> `POST /batik/name`
 
 **Description :**
 
-> Retrieves information about a specific batik identified by the provided 'id' parameter.
+> Retrieves data for a specific batik based on the batik name.
 
-**URL Parameters :**
+**Parameters:**
+- None
 
-> `id`   : The Unique identifier of the batik. 
+**Body:**
+- `name` (string) - Batik name
 
-**Response :**
+**Headers:**
+- None
 
-- Status Code : 200 (OK)
-- Body		      : Success message and the batik object.
-   - message  : Success message.
-   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
-     
-**Error Response :**
+**Response:**
 
-- Status Code : 404 (Not Found)
-- Body        : Error message if the batik with the specified ID was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the batik. 
+- **Success:**
+    ```json
+    {
+        "message": "Get batik from name success!",
+        "data": [
+            {
+                "id": "string",
+                "name": "string",
+                "regional_origin": "string",
+                "description": "string",
+                "image": "string",
+                "createdAt": "DateTime"
+            }
+        ]
+    }
+    ```
 
-<br>
+- **Error:**
+    - 404 Not Found:
+        ```json
+        {
+            "message": "Batik not found!"
+        }
+        ```
+    - 500 Internal Server Error:
+        ```json
+        {
+            "message": "Internal Server Error"
+        }
+        ```
 
-#### Get specific batik by batik ID 
+## Predict Route
 
-**Method :**
-
-> `GET`
-
-**Base URL :**
-
-> `/batiks/name/:name`
-
-**Description :**
-
-> Retrieves information about a specific batik identified by the provided 'name' parameter.
-
-**URL Parameters :**
-
-> `name`   : The name of the batik. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      : 
-   - message  : Success message.
-   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
-     
-**Error Response :**
-
-- Status Code : 404 (Not Found)
-- Body        : Error message if the batik with the specified name was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the batik. 
-
-<br>
-
-#### Get specific batik by batik ID 
-
-**Method :**
-
-> `GET`
-
-**Base URL :**
-
-> `/batiks/name/:name`
-
-**Description :**
-
-> Retrieves information about a specific batik identified by the provided `name` parameter.
-
-**URL Parameters :**
-
-> `name`   : The name of the batik. 
-
-**Response :**
-
-- Status Code : 200 (OK)
-- Body		      : 
-   - message  : Success message.
-   - data     : Object containing information about the specific batik. The `createdAt` and `updatedAt` fields are excluded.
-     
-**Error Response :**
-
-- Status Code : 404 (Not Found)
-- Body        : Error message if the batik with the specified name was not found.
-- Status Code : 500 (Internal Server Error)
-- Body        : Error message if there was an error retrieving the batik. 
-
-<br>
+### Predict Batik 
 
