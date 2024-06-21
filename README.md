@@ -10,7 +10,7 @@ BatikHub is an application designed to classify various types of batik motifs ba
 
 # Project Documents:
 - Project Brief : [Project Brief.docx](/)
-- Final presentation : [Product Presentation.pptx](/)
+- Final presentation : [Product Presentation.pptx](https://www.canva.com/design/DAGIjZDiU4E/2YjwQfRhj9rVr1X1RhhoOA/view?utm_content=DAGIjZDiU4E&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Capstone Project Team: 
 | Name | Bangkit-ID | Github-Profile | Task | Progress On Task |
