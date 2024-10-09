@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/VanGarman21/BatikHub/assets/53292102/c1144d45-41b1-47c3-98a5-29077eff1278" width="300" height="300" alt="SMARTGIZI">
+  <img src="[https://github.com/VanGarman21/BatikHub/assets/53292102/c1144d45-41b1-47c3-98a5-29077eff1278](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.co.id%2FHotel_Review-g297715-d17386778-Reviews-OYO_275_Hotel_Kita-Surabaya_East_Java_Java.html&psig=AOvVaw3_W50iKyUJMRbRaGnYuo6i&ust=1728573428885000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjxs_nLgYkDFQAAAAAdAAAAABAE)" width="300" height="300" alt="SMARTGIZI">
 </p>
 
 ## <p align="center">BatikHub : Exploring the Wonders of Indonesian Batik</p>
