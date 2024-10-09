@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://github.com/VanGarman21/BatikHub/assets/53292102/c1144d45-41b1-47c3-98a5-29077eff1278]" width="300" height="300" alt="SMARTGIZI">
+  <img src="https://github.com/VanGarman21/BatikHub/assets/53292102/c1144d45-41b1-47c3-98a5-29077eff1278" width="300" height="300" alt="SMARTGIZI">
 </p>
 
 ## <p align="center">BatikHub : Exploring the Wonders of Indonesian Batik</p>
